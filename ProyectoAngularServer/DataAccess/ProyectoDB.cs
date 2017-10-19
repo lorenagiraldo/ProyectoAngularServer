@@ -5,7 +5,8 @@ using System.Web;
 
 namespace ProyectoAngularServer.DataAccess
 {
-    public class ProyectoDB
+    public class ProyectoDB : DbContext
     {
+        public DbSet<Proyecto> proyectos { get; set; }
     }
 }
