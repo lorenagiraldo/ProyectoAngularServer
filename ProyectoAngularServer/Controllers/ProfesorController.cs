@@ -19,9 +19,9 @@ namespace ProyectoAngularServer.Controllers
         }
 
         [HttpPost]
-        public ActionResult guardarProfesor(Profesor teacher)
+        public ActionResult guardarProfesor(Profesor profesor)
         {
-            profesorDB.teachers.Add(teacher);
+            profesorDB.profesores.Add(profesor);
             int saveRecords = profesorDB.SaveChanges();
             var result = new { SavedRecords = saveRecords };
             return Json(result);
@@ -38,7 +38,7 @@ namespace ProyectoAngularServer.Controllers
 
         public ActionResult obtenerProfesores()
         {
-            return Json(profesorDB.teachers.ToList(), JsonRequestBehavior.AllowGet);
+            return Json(profesorDB.profesores.ToList(), JsonRequestBehavior.AllowGet);
         }
     }
 }
