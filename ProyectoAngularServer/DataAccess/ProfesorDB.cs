@@ -9,6 +9,6 @@ namespace ProyectoAngularServer.DataAccess
 {
     public class ProfesorDB : DbContext
     {
-        public DbSet<Profesor> teachers { get; set; }
+        public DbSet<Profesor> profesores { get; set; }
     }
 }
