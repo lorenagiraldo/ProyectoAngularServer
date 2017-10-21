@@ -159,13 +159,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ProfesorController.cs" />
     <Compile Include="Controllers\ProyectoController.cs" />
+    <Compile Include="Controllers\RecursoController.cs" />
     <Compile Include="DataAccess\ProfesorDB.cs" />
     <Compile Include="DataAccess\ProyectoDB.cs" />
+    <Compile Include="DataAccess\RecursoDB.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Models\Proyecto.cs" />
+    <Compile Include="Models\Recurso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +188,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Proyecto\" />
+    <Folder Include="Views\Recurso\" />
     <Folder Include="Views\Teachers\" />
   </ItemGroup>
   <PropertyGroup>

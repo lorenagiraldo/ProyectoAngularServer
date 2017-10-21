@@ -7,6 +7,7 @@ namespace ProyectoAngularServer.Models
 {
     public class Proyecto
     {
+        public int id { get; set; }
         public String titulo {get; set;}
         public String objetivo { get; set; }
         public String tipo { get; set; }
